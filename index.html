@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="automatic Part-of-speech tagging of english texts">
+    <meta name="author" content="Stefan Schramm">
+    <meta name="keywords" content="part-of-speech, parts-of-speech, tagging, english, pos tagging">
+    <meta name="google-site-verification" content="O3R721d3L_aUWhr7Z-0Ae9Pq6wEzAEfr3ANYbNbhNEc" />
+    <meta property="og:title" content="Parts-of-speech.Info - POS tagging online">
+    <meta property="og:url" content="http://parts-of-speech.info/">
+    <meta property="og:site_name" content="Parts-of-speech.Info - POS tagging online">
+    <meta property="og:description" content="automatic Part-of-speech tagging of english texts">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="alternate" hreflang="de" href="//wortarten.info/" />
+    <title>Parts-of-speech.Info - POS tagging online</title>
+    <link href="vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+      window.cookieconsent_options = {"message":"This website uses cookies of Google for personalizing ads. By using this site you are agreeing to this.","dismiss":"OK","learnMore":"More information","link":"http://www.google.com/intl/en/policies/privacy/partners/","theme":"css/cookieconsent2.css"};
+    </script>
+  </head>
+  <body>
+
+    <div class="container">
+
+      <h1>Parts-of-speech.Info</h1>
+
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a role="tab" data-toggle="tab" aria-controls="postag" href="#postag">POS tagging</a></li>
+        <li role="presentation"><a role="tab" data-toggle="tab" aria-controls="about" href="#about">about Parts-of-speech.Info</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="postag">
+          <div class="row">
+            <div class="col-md-8">
+              <p class="hidden-xs hidden-sm">Enter a <strong>complete sentence</strong> (no single words!) and click at "POS-tag!". The tagging works better when grammar and orthography are correct.</p>
+              <div id="form" class="mode-edit">
+                <div class="form-group">
+                  <label for="text" class="hidden-xs hidden-sm">Text:</label>
+                  <textarea class="form-control" rows="2" id="text">John likes the blue house at the end of the street.</textarea>
+                  <div id="textTagged"></div>
+                </div>
+                <div id="tagTipContainer">
+                    <div class="up">&#9650;</div>
+                    <div id="tagTip"></div>
+                </div>
+                <div class="btn-toolbar" role="toolbar">
+                  <button type="button" class="btn btn-default" id="submit"><span class="glyphicon glyphicon-ok"></span> POS-tag!</button>
+                  <button type="button" class="btn btn-default" id="edit"><span class="glyphicon glyphicon-edit"></span> Edit text</button>
+                  <!--<select class="form-control" id="language"><option>en</option></select>-->
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div id="colors">
+                  <div style="background-color: #fc6;">Adjective</div>
+                  <div style="background-color: #c99;">Adverb</div>
+                  <div style="background-color: #cc9;">Conjunction</div>
+                  <div style="background-color: #99c;">Determiner</div>
+                  <div style="background-color: #ccc;">Noun</div>
+                  <div style="background-color: #6c9;">Number</div>
+                  <div style="background-color: #f9c;">Preposition</div>
+                  <div style="background-color: #ee7;">Pronoun</div>
+                  <div style="background-color: #cf6;">Verb</div>
+              </div>
+            </div>
+          </div><!-- /row -->
+          <div class="row">
+            <div class="col-md-4 col-md-push-8">
+	      <div id="stupidNiceStuff">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-1966895022518202"
+     data-ad-slot="1417778379"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+              </div>
+            </div>
+            <div class="col-md-8 col-md-pull-4">
+              <div class="alert alert-warning" role="alert"><ul><li>Computers make mistakes too!</li></ul></div>
+            </div>
+          </div><!-- /row -->
+        </div><!-- /tabpanel -->
+        <div role="tabpanel" class="tab-pane" id="about">
+<div class="row" id="about2">
+  <div class="col-md-8">
+    <p>The core of Parts-of-speech.Info is based on the <a href="http://nlp.stanford.edu/software/tagger.shtml">Stanford University Part-Of-Speech-Tagger</a>.</p>
+		<p>Please be aware that these machine learning techniques might never reach 100 % accuracy.</p>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h2 class="panel-title">Links</h2>
+      </div>
+      <div class="panel-body">
+        <ul>
+          <li><a href="https://en.wikipedia.org/wiki/Part_of_speech">Wikipedia about Parts-of-speech</a></li>
+          <li><a href="http://nlp.stanford.edu/software/tagger.shtml">Stanford POS-Tagger</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div><!-- /row -->
+
+</div><!-- /tabpanel -->
+      </div><!-- /tabcontent -->
+
+      <hr>
+
+
+      <footer>
+        <p><a href="//stefanschramm.software/">Contact/Imprint</a> | <a href="//stefanschramm.net/datenschutz/">Privacy</a> | <a href="//wortarten.info/">Deutschsprachig</a></p>
+      </footer>
+
+    </div><!-- /container -->
+
+    <script src="vendor/cookieconsent2/cookieconsent.js"></script>
+    <script src="vendor/jquery/dist/jquery.min.js"></script>
+    <script src="vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+var appData = {"language":"en","clientStrings":{"label_examples":"Examples: "},"tagMap":{"!":[".","",""],"#":[".","",""],"$":[".","",""],"''":[".","",""],"(":[".","",""],")":[".","",""],",":[".","",""],"-LRB-":[".","",""],"-RRB-":[".","",""],".":[".","",""],":":[".","",""],"?":[".","",""],"CC":["Conjunction","",""],"CD":["Number","",""],"CD|RB":["X","",""],"DT":["Determiner","",""],"EX":["Determiner","",""],"FW":["X","",""],"IN":["Preposition","",""],"IN|RP":["Preposition","",""],"JJ":["Adjective","",""],"JJR":["Adjective","",""],"JJRJR":["Adjective","",""],"JJS":["Adjective","",""],"JJ|RB":["Adjective","",""],"JJ|VBG":["Adjective","",""],"LS":["X","",""],"MD":["Verb","",""],"NN":["Noun","",""],"NNP":["Noun","",""],"NNPS":["Noun","",""],"NNS":["Noun","",""],"NN|NNS":["Noun","",""],"NN|SYM":["Noun","",""],"NN|VBG":["Noun","",""],"NP":["Noun","",""],"PDT":["Determiner","",""],"POS":["PRT","",""],"PRP":["Pronoun","",""],"PRP$":["Pronoun","",""],"PRP|VBP":["Pronoun","",""],"PRT":["PRT","",""],"RB":["Adverb","",""],"RBR":["Adverb","",""],"RBS":["Adverb","",""],"RB|RP":["Adverb","",""],"RB|VBG":["Adverb","",""],"RN":["X","",""],"RP":["PRT","",""],"SYM":["X","",""],"TO":["PRT","",""],"UH":["X","",""],"VB":["Verb","",""],"VBD":["Verb","",""],"VBD|VBN":["Verb","",""],"VBG":["Verb","",""],"VBG|NN":["Verb","",""],"VBN":["Verb","",""],"VBP":["Verb","",""],"VBP|TO":["Verb","",""],"VBZ":["Verb","",""],"VP":["Verb","",""],"WDT":["Determiner","",""],"WH":["X","",""],"WP":["Pronoun","",""],"WP$":["Pronoun","",""],"WRB":["Adverb","",""],"``":[".","",""]},"colors":{"Adjective":"#fc6","Adverb":"#c99","Conjunction":"#cc9","Determiner":"#99c","Noun":"#ccc","Number":"#6c9","Preposition":"#f9c","Pronoun":"#ee7","Verb":"#cf6"}};
+    </script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
